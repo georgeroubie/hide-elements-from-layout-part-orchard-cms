@@ -1,0 +1,5 @@
+@{
+    if(!AuthorizedFor(Orchard.Security.StandardPermissions.SiteOwner)) {
+        Style.Include("LayoutPart.css").AtHead();
+    }
+}
