@@ -1,0 +1,32 @@
+/*HIDE CLIPBOARD*/
+.layout-editor-help-link{
+    display: none;
+}
+/*HIDE EVERY CATEGORY AFTER THE MEDIA CATEGORY*/
+.layout-toolbox-group:nth-child(n + 4) {
+    display: none;
+}
+/*HIDE SOME ELEMENTS FROM LAYOUT CATEGORY*/
+.layout-toolbox-group:nth-child(1) .layout-toolbox-section:nth-child(2) li:last-child {
+    display: none; /*Empty row*/
+}
+.layout-toolbox-group:nth-child(1) .layout-toolbox-section:nth-child(3) {
+    display: none;  /*Column*/
+}
+.layout-toolbox-group:nth-child(1) .layout-toolbox-section:nth-child(4) {
+    display: none; /*Canvas*/
+}
+/*HIDE CONTENT CATEGORY*/
+.layout-toolbox-group:nth-child(2) .layout-toolbox-item {
+    display: none;
+}
+.layout-toolbox-group:nth-child(2) .layout-toolbox-item:nth-child(4) {
+    display: block; /*Show HTML from content category*/
+}
+/*HIDE MEDIA CATEOGORY*/
+.layout-toolbox-group:nth-child(3) .layout-toolbox-item {
+    display: none;
+}
+.layout-toolbox-group:nth-child(3) .layout-toolbox-item:nth-child(1) {
+    display: block; /*Show Image from media category*/
+}
